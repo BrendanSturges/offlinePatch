@@ -1,0 +1,1 @@
+Get-ChildItem -recurse -filter "*.msu" | % {Copy-Item -path $_.FullName -Destination (get-item -path ".\" -verbose).fullname}
